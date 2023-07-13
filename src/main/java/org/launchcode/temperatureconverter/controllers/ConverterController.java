@@ -12,7 +12,8 @@ public class ConverterController {
     @GetMapping("/convert")
     @ResponseBody
     public String displayConvertForm(){
-        return "<form method =\"post\">" +
+        return "<html>"+"<body>"+
+                "<form method =\"post\">" +
                 "<label for=\"tempF\">Temperature</label>" +
                 "<input name=\"tempF\"placeholder=\"Fahrenheit\">"+
                 "<button>Convert to Celsius</button>"+
